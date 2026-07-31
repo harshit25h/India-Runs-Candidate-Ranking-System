@@ -78,5 +78,31 @@ Candidates are then sorted by final score to generate the ranked shortlist.
 ```text
 India-Runs-Candidate-Ranking-System/
 │
-├── candidate_ranking.ipynb    # Candidate processing and ranking pipeline
-└── README.md                  # Project documentation
+├── candidate_ranking.ipynb   # Candidate processing and ranking pipeline
+├── sample_output.csv         # Example ranked candidate output
+├── requirements.txt          # Python dependencies
+├── .gitignore                # Files excluded from version control
+└── README.md                 # Project documentation
+
+
+```markdown
+## 📊 Output
+
+The system evaluates 100,000 candidate profiles and generates a ranked Top-100 shortlist based on skill alignment, experience, behavioral signals, and other relevant attributes.
+
+The output contains:
+
+- Candidate ID
+- Rank
+- Final score
+- Recommendation reasoning
+
+A small illustrative output is available in `sample_output.csv`.
+
+## ▶️ How to Run
+
+1. Clone this repository.
+2. Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
